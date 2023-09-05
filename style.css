@@ -7,6 +7,61 @@ body {
 
 .header {
     background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+}
+
+.form-btn,
+.notify-btn,
+.header-btn,
+.profile-btn {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+form>div {
+    display: flex;
+}
+
+form>div>input {
+    flex: 1;
+}
+
+.notify {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    align-items: center;
+    justify-items: center;
+    justify-content: end;
+}
+
+.profile-btn {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-image: url(communityIcon_x0rt1oumbis71.png);
+    background-size: 48px;
+}
+
+.notify-btn {
+    justify-self: end;
+}
+
+.name {
+    justify-self: start;
+}
+
+.userinfo {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
