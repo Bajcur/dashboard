@@ -21,7 +21,8 @@ body {
 .form-btn,
 .notify-btn,
 .header-btn,
-.profile-btn {
+.profile-btn,
+.btn {
 	background: none;
 	color: inherit;
 	border: none;
@@ -72,7 +73,7 @@ input[type=search] {
 
 .userinfo {
     display: grid;
-    grid-template-columns: 64px 330px;
+    grid-template-columns: 64px 1fr;
     align-items: center;
 }
 
@@ -182,6 +183,11 @@ span.size-40 {
     font-variation-settings: 'OPSZ' 40;
 }
 
+span.size-20 {
+    font-size: 20px;
+    font-variation-settings: 'OPSZ' 20;
+}
+
 
 .main {
     background-color: #cbd5e1;
@@ -202,7 +208,8 @@ span.size-40 {
 .card {
     min-height: 150px;
     background-color: whitesmoke;
-    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
 }
 
 .project-name {
@@ -273,4 +280,64 @@ h4 {
 .main-right {
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+.card, 
+.users,
+.container {
+    box-shadow: 3px 5px 3px 0px rgba(159, 168, 165, 0.38);
+    border-radius: 10px;
+}
+
+.user1.btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(mitsui.png);
+    background-size: 40px;
+}
+
+.user2.btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(rukawa.jpg);
+    background-size: 40px;
+}
+
+.user3.btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(miyagi.jpg);
+    background-size: 40px;
+}
+
+.user4.btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(akagi.jpg);
+    background-size: 40px;
+}
+
+.color {
+    background-color: #ef4444;
+    border-radius: 10px 0 0 10px;   
+}
+
+.card-content{
+    padding: 0 15px 0 15px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.project-description {
+    color: grey;
+    margin: 0;
+}
+
+.icons {
+    margin-bottom: 16px;
+    justify-self: end;
 }
